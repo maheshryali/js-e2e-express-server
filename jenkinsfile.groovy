@@ -12,7 +12,9 @@ pipeline {
             }
         }
         stage('npm'){
-            sh "npm ${params.npm}"
+            steps{
+                   sh "npm ${params.npm}"
+            }
         }
         }
         
