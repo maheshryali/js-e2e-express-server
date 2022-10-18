@@ -1,6 +1,6 @@
 pipeline {
     agent { label 'jse2c' }
-    triggers { pollscm '* * * * *'}
+    triggers { pollSCM '* * * * *'}
     parameters {
         choice(name: 'npm', choices: ['install', 'run build', ], description: '')
     }
